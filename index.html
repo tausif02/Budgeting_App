@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budgeting App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Budgeting Calculator</h1>
+
+        <div class="input-section">
+            <label for="income">Monthly Income ($):</label>
+            <input type="number" id="income" placeholder="e.g., 5000">
+
+            <label for="expenses">Monthly Expenses (excluding rent) ($):</label>
+            <input type="number" id="expenses" placeholder="e.g., 2000">
+
+            <label for="savings">Desired Monthly Savings ($):</label>
+            <input type="number" id="savings" placeholder="e.g., 500">
+
+            <button id="calculateBtn">Calculate Available Rent</button>
+            
+            <p id="errorMessage" class="error-message"></p>
+        </div>
+
+        <div class="result-section">
+            <h2>Results</h2>
+            <p>Available for Rent: $<span id="rentAmount" class="result"></span></p>
+            <p>Estimated House Price: $<span id="housePrice" class="result"></span></p>
+        </div>
+
+        <h2>Mortgage Affordability Table</h2>
+        <table border="1" id="mortgageTable">
+            <thead></thead>
+            <tbody></tbody>
+        </table>
+
+        <h3>Random Cat for Fun!</h3>
+        <img id="catImage" src="" alt="Random Cat Image" width="300">
+        
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
